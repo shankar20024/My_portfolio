@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Segoe UI' , sans-serif;
+}
+body{
+    background:#f8f9fa ;
+    color:#333;
+}
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 10%;
+    background:#fff;
+    min-height:100vh;
+}
+.hero-content{
+    max-width:50%;
+}
+.hero-content h1 {
+    margin-bottom: 20px;
+    font-size:48px;
+}
+.hero-content span{
+    color:#007bff;
+}
+.hero-content p{
+    font-size:20px;
+    margin-bottom: 30px;
+}
+.btn{
+    padding:12px 25px;
+    background: #007bff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    transition: background 0.3s;
+}
+.bt:hover{
+    background: #0056b3;
+}
+
+.hero-img img{
+    width:300px;
+    border-radius:50%;
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+.about{
+    padding:60px 10%;
+    background-color: #f9f9f9;
+    text-align:center;
+}
+.about h2{
+    font-size:36px;
+    color:#333;
+    margin-bottom:20px;
+    position:relative;
+}
+.about p{
+    font-size:18px;
+    color: #555;
+    max-width: 800px;
+    margin:auto;
+    line-height:1.6;
+}
+.skills{
+    padding:60px 10%;
+    background-color: #fff;
+    text-align:center;
+}
+.skills h2{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#333;
+}
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
+}
+.skills-items{
+    background:#007bff;
+    color:white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size:16px;
+    transition : transform 0.3s ease;
+}
+.skills-items:hover{
+    transform:scale(1.1);
+    background:#0056b3;
+}
+.My_projects{
+    text-align:center;
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+}
+.My_projects h2{
+    font-size:36px;
+    margin-bottom: 30px;
+    color:#333;
+}
+.project-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:30px;
+}
+.project-card{
+    background: #fff;
+    padding:25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    max-width:300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05)
+}
+.project-card:hover{
+    transform : translateY(-10px);
+}
+.project-card h3{
+    color:#007bff;
+    margin-bottom:10px;
+}
+.project-card p{
+    margin-bottom:18px;
+    font-size:15px;
+    color:#555;
+}
+.project-card .btn{
+    margin:5px;
+    padding:8px 16px;
+    background:#007bff;
+    color: white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+}
+.contact{
+    text-align: center;
+    background: #fff;
+    padding:60px 10%;
+}
+.contact h2 {
+    font-size:36px;
+    margin-bottom: 10px;
+    
+}
+.contact p{
+    font-size:18px;
+    color: #555;
+    margin-bottom:30px;
+}
+.contact form {
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact input,
+.contact textarea{
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize:none;
+}
+.contact button{
+    padding:12px;
+    border:none;
+    background-color: #007bff;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition: background 0.3 ease;
+}
+.contact button:hover{
+    background-color: #0056b3;
+}
+.footer{
+    text-align:center;
+    padding:20px 10%;
+    color:#fff;
+    background: #333;
+    font-size:14px;
+}
+.container a img{
+    width:50px;
+}
+body{
+    padding-top:30px;
+}
+@media (max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align: center;
+        justify-content:start;
+        gap:180px;
+    }
+
+    .hero-content , .hero-img{
+        max-width:100%;
+    }
+    .hero-img img{
+        width:200px;
+        
+    }
+    .skills-list , .project-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-items , .project-card{
+        width:100%;
+        max-width:300px;
+    }
+    .contact-content form{
+        width:100%;
+    }
+    .contact-form input,.contact-form textarea{
+        font-size:15px;
+    }
+    .container a img{
+        width:25px;
+    }
+}
